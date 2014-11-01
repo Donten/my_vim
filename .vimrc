@@ -1,4 +1,4 @@
-" Vundle設置
+" Vundle设置
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -39,11 +39,12 @@ Plugin 'moll/vim-bbye'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
 " leader键
 let mapleader=","
 let g:mapleader=","
 
-" nerdtree設置
+" nerdtree设置
 " 控制当光标移动超过一定距离时，是否自动将焦点调整到屏中心
 let NERDTreeAutoCenter=1
 " 指定鼠标模式（1.双击打开；2.单目录双文件；3.单击打开）
@@ -66,10 +67,10 @@ let NERDTreeWinSize=31
 let Tlist_Show_One_File=1 " 0为同时显示多个文件函数列表,1则只显示当前文件函数列表
 let Tlist_Auto_Update=1
 let Tlist_File_Fold_Auto_Close=1 " 非当前文件，函数列表折叠隐藏
-let Tlist_Exit_OnlyWindow=1 "如果taglist是最后一个窗口，则退出vim
+let Tlist_Exit_OnlyWindow=1 "如果taglist是最后一个窗口，则退出vim 
 let Tlist_Auto_Update=1            "Automatically update the taglist to include newly edited files.
 "把taglist窗口放在屏幕的右侧，缺省在左侧
-"let Tlist_Use_Right_Window=1
+"let Tlist_Use_Right_Window=1 
 "显示taglist菜单
 "let Tlist_Show_Menu=1
 "启动vim自动打开taglist
@@ -153,9 +154,17 @@ nnoremap ]b :bn<CR>
 nnoremap bd :Bd<CR>
 
 
-// 3.6 ctrlp
 
-// 3.7 nerdcommenter
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,13 +189,12 @@ set fileencodings=utf-8,cp950
 
 " 編輯喜好設定                                                                                                                                                                                                     
 syntax on        " 語法上色顯示
-set t_Co=256	 " VIM 256種顏色
 set nocompatible " VIM 不使用和 VI 相容的模式
 " set ai           " 自動縮排
-set shiftwidth=2 " 設定縮排寬度 = 4 
+set shiftwidth=4 " 設定縮排寬度 = 4 
 set tabstop=4    " tab 的字元數
 set softtabstop=4
-" set expandtab   " 用 space 代替 tab
+set expandtab   " 用 space 代替 tab
 
 set ruler        " 顯示右下角設定值
 set backspace=2  " 在 insert 也可用 backspace
@@ -202,8 +210,5 @@ set cursorline   " 顯示目前的游標位置
 set laststatus=2
 set statusline=%4*%<\%m%<[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
 
-au BufNewFile,BufRead *.cu set filetype=cuda
-au BufNewFile,BufRead *.cuh set filetype=cuda
-
-colorscheme torte
+colorscheme desert
 
